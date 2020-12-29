@@ -2,15 +2,15 @@
 * @Author: Gavin
 * @Date:   2020-12-29 14:59:56
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-29 15:49:27
+* @Last Modified time: 2020-12-29 17:15:39
 */
 
 
 /* VARIABLES */
 :root {
 	--dark-cyan: hsl(185, 75%, 39%);
-	--dark-blue-1: blue: hsl(229, 23%, 23%);
-	--dark-blue-2: blue: hsl(227, 10%, 46%);
+	--dark-blue-1: hsl(229, 23%, 23%);
+	--dark-blue-2: hsl(227, 10%, 46%);
 	--dark-gray: hsl(0, 0%, 59%);
 }
 
@@ -24,10 +24,13 @@ html {
 	box-sizing: border-box;
 }
 
+
+/* BACKGROUND */
 body {
 	background-color: var(--dark-cyan);
 	position: relative;
 	height: 100vh;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 .bg-pattern-top {
@@ -39,6 +42,10 @@ body {
 	top: 0;
 	left: 0;
 	margin-left: -20rem;
+}
+
+.bg {
+	position: relative;
 }
 
 .bg-pattern-top img {
@@ -55,3 +62,79 @@ body {
 }
 
 
+/* PROFILE CARD */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.content {
+	width: 38rem;
+	height: 42rem;
+	background-color: #fff;
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	color: var(--dark-gray);
+}
+
+.content-bg {
+	background-image: url(images/bg-pattern-card.svg);
+	background-size: cover;
+	height: 18rem;
+}
+
+.content-user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: auto;
+	font-size: 1.4rem;
+}
+
+.content-user p {
+	margin-top: 1.2rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.content-user p span {
+	margin-right: .5rem;
+}
+
+.content-user-pic {
+	border-radius: 50%;
+	border: .5rem solid #fff;
+	margin-top: -5rem;
+}
+
+.bold {
+	font-weight: 700;
+	color: var(--dark-blue-1);
+	font-size: 1.8rem;
+}
+
+.content-info {
+	border-top: 1px solid var(--dark-gray);
+	height: 9rem;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+.content-info p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mini-text {
+	margin-top: .5rem;
+	letter-spacing: 1px;
+}
