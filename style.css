@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-29 14:59:56
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-29 17:55:30
+* @Last Modified time: 2020-12-31 15:04:23
 */
 
 
@@ -140,7 +140,14 @@ body {
     letter-spacing: 1px;
 }
 
-@media (max-width: 700px) {
+@media only screen and (orientation: landscape) and (max-width: 50em) {
+    .center {
+        height: 100%;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 43.75em) {
 
     .bg-pattern-top {
         width: 40rem;
@@ -151,13 +158,13 @@ body {
     }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 20.625em) {
     .content {
         width: 30rem;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 18.75em) {
     .content {
         width: 25rem;
     }
